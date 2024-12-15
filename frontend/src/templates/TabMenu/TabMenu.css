@@ -1,0 +1,22 @@
+ul.tab-menu-container {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul.tab-menu-container > li {
+  padding: 5px 5px;
+  border: 1px solid #999;
+  cursor: pointer;
+}
+
+ul.tab-menu-container > li.tab-header {
+  font-weight: 600;
+  color: #013313;
+}
+
+ul.tab-menu-container li.tab-item {
+  background-color: #b3cac3;
+}
