@@ -93,3 +93,51 @@ body menu {
     font-size: 0.75rem;
   }
 }
+
+/* Utility Classes */
+
+.bordered-heading {
+  padding: 5px 5px;
+  font-weight: 600;
+  border: 1px solid #999;
+  background-color: rgb(250, 250, 250);
+}
+
+/* Form Styles */
+/* Form Contaienr Styles */
+form.form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 20px;
+}
+
+.form-grid > div.form-item-box {
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Form Inner Element Styles */
+
+.form-grid > div.form-item-box > div.form-item-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-grid > div.form-item-box > div.form-item-field label {
+  font-size: 1rem;
+}
+.form-grid > div.form-item-box > div.form-item-field input {
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.form-grid button {
+  font-size: 1rem;
+  padding: 0px;
+  width: 100%;
+}
+
+/* Form Styles */

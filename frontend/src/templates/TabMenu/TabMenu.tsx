@@ -10,10 +10,7 @@ interface TabMenu extends TabMenuPropsBase {
 const TabMenu: React.FC<TabMenu> = ({ optionsArray, selectedTabOption, updateSelectedOption, tabHeader }) => {
   const [toggleTab, setToggleTab] = useState<boolean>(false);
   const [hoveredOption, setHoveredOption] = useState<string | null>(null);
-  console.log(selectedTabOption);
-  useEffect(() => {
-    console.log(selectedTabOption);
-  }, [selectedTabOption]);
+  useEffect(() => {}, [selectedTabOption]);
   return (
     <>
       <ul className="tab-menu-container">

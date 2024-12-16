@@ -1,0 +1,13 @@
+.input-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b3cac3;
+}

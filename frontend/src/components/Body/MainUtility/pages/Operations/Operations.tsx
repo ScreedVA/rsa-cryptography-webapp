@@ -1,7 +1,7 @@
-import { useState } from "react";
 import TabMenu from "../../../../../templates/TabMenu/TabMenu";
 import "./Operations.css";
 import { OperationsPropsBase } from "../../../../../models/OperationsModels";
+import React from "react";
 
 interface OperationsProps extends OperationsPropsBase {}
 
@@ -11,13 +11,16 @@ const Operations: React.FC<OperationsProps> = ({ tabMenuConfigArray, selectedTab
     <>
       <div className="operations-container">
         <div className="operation-test-tab">
-          <li className="operation-header">Operations</li>
+          <h5 className="operation-header bordered-heading">Operations</h5>
+
           {tabMenuConfigArray.map((tabMenuConfig, index) => (
-            <TabMenu
-              {...tabMenuConfig}
-              selectedTabOption={selectedTabOption}
-              updateSelectedOption={updateSelectedTabOption}
-            />
+            <React.Fragment key={`${tabMenuConfig.tabHeader}-${index}`}>
+              <TabMenu
+                {...tabMenuConfig}
+                selectedTabOption={selectedTabOption}
+                updateSelectedOption={updateSelectedTabOption}
+              />
+            </React.Fragment>
           ))}
         </div>
       </div>

@@ -1,9 +1,3 @@
 .operations-container {
   height: 100%;
 }
-
-.operation-header {
-  padding: 5px 5px;
-  font-weight: 600;
-  border: 1px solid #999;
-}
